@@ -1,24 +1,3 @@
-# README
-
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+# nginx + Rails (unicorn) + MySQL environment
+## 使い方
+作ったモチベーションとか，ビルド方法などは Qiita にまとめてあるので，[こちら](http://qiita.com/utahkaA/items/772cd80b893cd5367f38)を参考ください．

@@ -1,0 +1,165 @@
+I, [2018-06-20T14:46:34.390566 #1]  INFO -- : listening on addr=/share/unicorn.sock fd=9
+I, [2018-06-20T14:46:34.390827 #1]  INFO -- : listening on addr=0.0.0.0:3001 fd=10
+I, [2018-06-20T14:46:34.390900 #1]  INFO -- : worker=0 spawning...
+I, [2018-06-20T14:46:34.391789 #1]  INFO -- : worker=1 spawning...
+I, [2018-06-20T14:46:34.392277 #1]  INFO -- : worker=2 spawning...
+I, [2018-06-20T14:46:34.393228 #7]  INFO -- : worker=0 spawned pid=7
+I, [2018-06-20T14:46:34.393370 #7]  INFO -- : Refreshing Gem list
+I, [2018-06-20T14:46:34.393951 #1]  INFO -- : worker=3 spawning...
+I, [2018-06-20T14:46:34.395356 #9]  INFO -- : worker=1 spawned pid=9
+I, [2018-06-20T14:46:34.395479 #9]  INFO -- : Refreshing Gem list
+I, [2018-06-20T14:46:34.397902 #1]  INFO -- : worker=4 spawning...
+I, [2018-06-20T14:46:34.398577 #12]  INFO -- : worker=2 spawned pid=12
+I, [2018-06-20T14:46:34.398720 #12]  INFO -- : Refreshing Gem list
+I, [2018-06-20T14:46:34.401921 #1]  INFO -- : worker=5 spawning...
+I, [2018-06-20T14:46:34.402618 #15]  INFO -- : worker=3 spawned pid=15
+I, [2018-06-20T14:46:34.402756 #15]  INFO -- : Refreshing Gem list
+I, [2018-06-20T14:46:34.405308 #18]  INFO -- : worker=4 spawned pid=18
+I, [2018-06-20T14:46:34.406344 #1]  INFO -- : worker=6 spawning...
+I, [2018-06-20T14:46:34.407497 #18]  INFO -- : Refreshing Gem list
+I, [2018-06-20T14:46:34.410825 #22]  INFO -- : worker=5 spawned pid=22
+I, [2018-06-20T14:46:34.411136 #22]  INFO -- : Refreshing Gem list
+I, [2018-06-20T14:46:34.413914 #1]  INFO -- : worker=7 spawning...
+I, [2018-06-20T14:46:34.420036 #25]  INFO -- : worker=6 spawned pid=25
+I, [2018-06-20T14:46:34.420159 #25]  INFO -- : Refreshing Gem list
+I, [2018-06-20T14:46:34.422204 #1]  INFO -- : master process ready
+I, [2018-06-20T14:46:34.426087 #28]  INFO -- : worker=7 spawned pid=28
+I, [2018-06-20T14:46:34.426207 #28]  INFO -- : Refreshing Gem list
+I, [2018-06-20T14:46:43.425311 #18]  INFO -- : worker=4 ready
+I, [2018-06-20T14:46:43.411244 #25]  INFO -- : worker=6 ready
+I, [2018-06-20T14:46:43.408207 #9]  INFO -- : worker=1 ready
+I, [2018-06-20T14:46:43.429937 #15]  INFO -- : worker=3 ready
+I, [2018-06-20T14:46:43.430557 #22]  INFO -- : worker=5 ready
+I, [2018-06-20T14:46:43.420655 #28]  INFO -- : worker=7 ready
+I, [2018-06-20T14:46:43.424880 #7]  INFO -- : worker=0 ready
+I, [2018-06-20T14:46:43.431646 #12]  INFO -- : worker=2 ready
+124.35.83.42 - - [20/Jun/2018:14:47:03 +0900] "GET / HTTP/1.0" 500 74301 0.4058
+124.35.83.42 - - [20/Jun/2018:14:47:03 +0900] "GET /favicon.ico HTTP/1.0" 200 - 0.0429
+115.127.39.170 - - [20/Jun/2018:14:48:29 +0900] "GET / HTTP/1.0" 500 74086 0.1968
+124.35.83.42 - - [20/Jun/2018:14:56:24 +0900] "GET / HTTP/1.0" 500 74343 0.4702
+124.35.83.42 - - [20/Jun/2018:14:56:25 +0900] "GET /favicon.ico HTTP/1.0" 200 - 0.0452
+I, [2018-06-20T14:59:25.869461 #1]  INFO -- : reaped #<Process::Status: pid 7 exit 0> worker=0
+I, [2018-06-20T14:59:25.924882 #1]  INFO -- : reaped #<Process::Status: pid 9 exit 0> worker=1
+I, [2018-06-20T14:59:25.925757 #1]  INFO -- : reaped #<Process::Status: pid 12 exit 0> worker=2
+I, [2018-06-20T14:59:25.925799 #1]  INFO -- : reaped #<Process::Status: pid 15 exit 0> worker=3
+I, [2018-06-20T14:59:25.926322 #1]  INFO -- : reaped #<Process::Status: pid 18 exit 0> worker=4
+I, [2018-06-20T14:59:25.926359 #1]  INFO -- : reaped #<Process::Status: pid 22 exit 0> worker=5
+I, [2018-06-20T14:59:25.926386 #1]  INFO -- : reaped #<Process::Status: pid 25 exit 0> worker=6
+I, [2018-06-20T14:59:25.926411 #1]  INFO -- : reaped #<Process::Status: pid 28 exit 0> worker=7
+I, [2018-06-20T14:59:25.973542 #1]  INFO -- : master complete
+I, [2018-06-20T14:59:28.817275 #1]  INFO -- : unlinking existing socket=/share/unicorn.sock
+I, [2018-06-20T14:59:28.818829 #1]  INFO -- : listening on addr=/share/unicorn.sock fd=9
+I, [2018-06-20T14:59:28.819053 #1]  INFO -- : listening on addr=0.0.0.0:3001 fd=10
+I, [2018-06-20T14:59:28.819132 #1]  INFO -- : worker=0 spawning...
+I, [2018-06-20T14:59:28.820151 #1]  INFO -- : worker=1 spawning...
+I, [2018-06-20T14:59:28.820725 #1]  INFO -- : worker=2 spawning...
+I, [2018-06-20T14:59:28.821976 #1]  INFO -- : worker=3 spawning...
+I, [2018-06-20T14:59:28.822670 #9]  INFO -- : worker=1 spawned pid=9
+I, [2018-06-20T14:59:28.822790 #9]  INFO -- : Refreshing Gem list
+I, [2018-06-20T14:59:28.825578 #7]  INFO -- : worker=0 spawned pid=7
+I, [2018-06-20T14:59:28.825692 #7]  INFO -- : Refreshing Gem list
+I, [2018-06-20T14:59:28.830055 #1]  INFO -- : worker=4 spawning...
+I, [2018-06-20T14:59:28.830787 #12]  INFO -- : worker=2 spawned pid=12
+I, [2018-06-20T14:59:28.830903 #12]  INFO -- : Refreshing Gem list
+I, [2018-06-20T14:59:28.838190 #1]  INFO -- : worker=5 spawning...
+I, [2018-06-20T14:59:28.838951 #15]  INFO -- : worker=3 spawned pid=15
+I, [2018-06-20T14:59:28.839070 #15]  INFO -- : Refreshing Gem list
+I, [2018-06-20T14:59:28.846121 #1]  INFO -- : worker=6 spawning...
+I, [2018-06-20T14:59:28.846874 #18]  INFO -- : worker=4 spawned pid=18
+I, [2018-06-20T14:59:28.846992 #18]  INFO -- : Refreshing Gem list
+I, [2018-06-20T14:59:28.854137 #1]  INFO -- : worker=7 spawning...
+I, [2018-06-20T14:59:28.855869 #21]  INFO -- : worker=5 spawned pid=21
+I, [2018-06-20T14:59:28.856059 #21]  INFO -- : Refreshing Gem list
+I, [2018-06-20T14:59:28.862199 #25]  INFO -- : worker=6 spawned pid=25
+I, [2018-06-20T14:59:28.862319 #25]  INFO -- : Refreshing Gem list
+I, [2018-06-20T14:59:28.865341 #1]  INFO -- : master process ready
+I, [2018-06-20T14:59:28.870109 #28]  INFO -- : worker=7 spawned pid=28
+I, [2018-06-20T14:59:28.870222 #28]  INFO -- : Refreshing Gem list
+I, [2018-06-20T14:59:38.070198 #12]  INFO -- : worker=2 ready
+I, [2018-06-20T14:59:38.059000 #9]  INFO -- : worker=1 ready
+I, [2018-06-20T14:59:38.069584 #25]  INFO -- : worker=6 ready
+I, [2018-06-20T14:59:38.052210 #21]  INFO -- : worker=5 ready
+I, [2018-06-20T14:59:38.062313 #28]  INFO -- : worker=7 ready
+I, [2018-06-20T14:59:38.063939 #18]  INFO -- : worker=4 ready
+I, [2018-06-20T14:59:38.065055 #15]  INFO -- : worker=3 ready
+I, [2018-06-20T14:59:38.077213 #7]  INFO -- : worker=0 ready
+124.35.83.42 - - [20/Jun/2018:14:59:38 +0900] "GET / HTTP/1.0" 500 75432 0.3400
+124.35.83.42 - - [20/Jun/2018:14:59:38 +0900] "GET /favicon.ico HTTP/1.0" 200 - 0.0412
+81.31.246.219 - - [20/Jun/2018:14:59:48 +0900] "GET / HTTP/1.0" 500 75174 0.1469
+124.35.83.42 - - [20/Jun/2018:15:00:32 +0900] "GET / HTTP/1.0" 500 58406 0.1096
+124.35.83.42 - - [20/Jun/2018:15:00:32 +0900] "GET /favicon.ico HTTP/1.0" 200 - 0.0992
+124.35.83.42 - - [20/Jun/2018:15:04:57 +0900] "GET / HTTP/1.0" 500 75432 0.3936
+124.35.83.42 - - [20/Jun/2018:15:04:57 +0900] "GET /favicon.ico HTTP/1.0" 200 - 0.0129
+124.35.83.42 - - [20/Jun/2018:15:05:20 +0900] "GET / HTTP/1.0" 500 75432 0.3620
+124.35.83.42 - - [20/Jun/2018:15:05:20 +0900] "GET /favicon.ico HTTP/1.0" 200 - 0.2263
+I, [2018-06-20T15:09:38.603743 #1]  INFO -- : reaped #<Process::Status: pid 7 exit 0> worker=0
+I, [2018-06-20T15:09:38.629620 #1]  INFO -- : reaped #<Process::Status: pid 9 exit 0> worker=1
+I, [2018-06-20T15:09:38.630051 #1]  INFO -- : reaped #<Process::Status: pid 12 exit 0> worker=2
+I, [2018-06-20T15:09:38.630868 #1]  INFO -- : reaped #<Process::Status: pid 15 exit 0> worker=3
+I, [2018-06-20T15:09:38.631308 #1]  INFO -- : reaped #<Process::Status: pid 18 exit 0> worker=4
+I, [2018-06-20T15:09:38.631340 #1]  INFO -- : reaped #<Process::Status: pid 21 exit 0> worker=5
+I, [2018-06-20T15:09:38.631370 #1]  INFO -- : reaped #<Process::Status: pid 25 exit 0> worker=6
+I, [2018-06-20T15:09:38.631396 #1]  INFO -- : reaped #<Process::Status: pid 28 exit 0> worker=7
+I, [2018-06-20T15:09:38.650347 #1]  INFO -- : master complete
+I, [2018-06-20T15:09:40.721571 #1]  INFO -- : unlinking existing socket=/share/unicorn.sock
+I, [2018-06-20T15:09:40.722146 #1]  INFO -- : listening on addr=/share/unicorn.sock fd=9
+I, [2018-06-20T15:09:40.722384 #1]  INFO -- : listening on addr=0.0.0.0:3001 fd=10
+I, [2018-06-20T15:09:40.722463 #1]  INFO -- : worker=0 spawning...
+I, [2018-06-20T15:09:40.723482 #1]  INFO -- : worker=1 spawning...
+I, [2018-06-20T15:09:40.724050 #1]  INFO -- : worker=2 spawning...
+I, [2018-06-20T15:09:40.724859 #8]  INFO -- : worker=0 spawned pid=8
+I, [2018-06-20T15:09:40.724994 #8]  INFO -- : Refreshing Gem list
+I, [2018-06-20T15:09:40.725990 #1]  INFO -- : worker=3 spawning...
+I, [2018-06-20T15:09:40.726675 #10]  INFO -- : worker=1 spawned pid=10
+I, [2018-06-20T15:09:40.726804 #10]  INFO -- : Refreshing Gem list
+I, [2018-06-20T15:09:40.728338 #1]  INFO -- : worker=4 spawning...
+I, [2018-06-20T15:09:40.730121 #13]  INFO -- : worker=2 spawned pid=13
+I, [2018-06-20T15:09:40.730260 #13]  INFO -- : Refreshing Gem list
+I, [2018-06-20T15:09:40.732594 #1]  INFO -- : worker=5 spawning...
+I, [2018-06-20T15:09:40.734356 #16]  INFO -- : worker=3 spawned pid=16
+I, [2018-06-20T15:09:40.734487 #16]  INFO -- : Refreshing Gem list
+I, [2018-06-20T15:09:40.736444 #1]  INFO -- : worker=6 spawning...
+I, [2018-06-20T15:09:40.738535 #19]  INFO -- : worker=4 spawned pid=19
+I, [2018-06-20T15:09:40.738666 #19]  INFO -- : Refreshing Gem list
+I, [2018-06-20T15:09:40.744725 #1]  INFO -- : worker=7 spawning...
+I, [2018-06-20T15:09:40.748635 #25]  INFO -- : worker=6 spawned pid=25
+I, [2018-06-20T15:09:40.748767 #25]  INFO -- : Refreshing Gem list
+I, [2018-06-20T15:09:40.751412 #22]  INFO -- : worker=5 spawned pid=22
+I, [2018-06-20T15:09:40.751543 #22]  INFO -- : Refreshing Gem list
+I, [2018-06-20T15:09:40.754084 #1]  INFO -- : master process ready
+I, [2018-06-20T15:09:40.758091 #29]  INFO -- : worker=7 spawned pid=29
+I, [2018-06-20T15:09:40.758217 #29]  INFO -- : Refreshing Gem list
+I, [2018-06-20T15:09:49.899663 #13]  INFO -- : worker=2 ready
+I, [2018-06-20T15:09:49.904626 #16]  INFO -- : worker=3 ready
+I, [2018-06-20T15:09:49.905867 #25]  INFO -- : worker=6 ready
+I, [2018-06-20T15:09:49.908256 #19]  INFO -- : worker=4 ready
+I, [2018-06-20T15:09:49.896576 #10]  INFO -- : worker=1 ready
+I, [2018-06-20T15:09:49.933057 #22]  INFO -- : worker=5 ready
+I, [2018-06-20T15:09:49.936209 #8]  INFO -- : worker=0 ready
+I, [2018-06-20T15:09:49.939568 #29]  INFO -- : worker=7 ready
+124.35.83.42 - - [20/Jun/2018:15:09:50 +0900] "GET / HTTP/1.0" 500 54977 0.4894
+124.35.83.42 - - [20/Jun/2018:15:09:50 +0900] "GET /favicon.ico HTTP/1.0" 200 - 0.0426
+124.35.83.42 - - [20/Jun/2018:15:10:21 +0900] "GET / HTTP/1.0" 200 - 0.6809
+124.35.83.42 - - [20/Jun/2018:15:10:22 +0900] "GET /application.self-af04b226fd7202dfc532ce7aedb95a0128277937e90d3b3a3d35e1cce9e16886.css?body=1 HTTP/1.0" 200 703 0.0232
+124.35.83.42 - - [20/Jun/2018:15:10:22 +0900] "GET /turbolinks.self-2db6ec539b9190f75e1d477b305df53d12904d5cafdd47c7ffd91ba25cbec128.js?body=1 HTTP/1.0" 200 37484 0.1188
+124.35.83.42 - - [20/Jun/2018:15:10:23 +0900] "GET /jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1 HTTP/1.0" 200 21600 1.5292
+124.35.83.42 - - [20/Jun/2018:15:10:23 +0900] "GET /cable.self-6e0514260c1aa76eaf252412ce74e63f68819fd19bf740595f592c5ba4c36537.js?body=1 HTTP/1.0" 200 291 0.0093
+124.35.83.42 - - [20/Jun/2018:15:10:23 +0900] "GET /home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1 HTTP/1.0" 200 31 0.0185
+124.35.83.42 - - [20/Jun/2018:15:10:23 +0900] "GET /posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1 HTTP/1.0" 200 31 0.0037
+124.35.83.42 - - [20/Jun/2018:15:10:23 +0900] "GET /users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1 HTTP/1.0" 200 31 0.0066
+124.35.83.42 - - [20/Jun/2018:15:10:23 +0900] "GET /application.self-b89234cf2659d7fedea75bca0b8d231ad7dfc2f3f57fcbaf5f44ed9dc384137b.js?body=1 HTTP/1.0" 200 662 0.0117
+124.35.83.42 - - [20/Jun/2018:15:10:24 +0900] "GET /home.self-f868777eccc566b67bbd54bb3e228265d2e3d52451725acc17ad34f704a51e40.css?body=1 HTTP/1.0" 200 5559 2.2650
+124.35.83.42 - - [20/Jun/2018:15:10:24 +0900] "GET /users.self-3cecdb91917b57dc44cc0eb9dc3d104ce7b32438d73d746a11204bbe3f9a898f.css?body=1 HTTP/1.0" 200 2807 2.4354
+124.35.83.42 - - [20/Jun/2018:15:10:24 +0900] "GET /posts.self-4764b0b2de3bfd7f31eb2e1ef2fe31c6c1384dd4f3ea68eda796025e7f211b5b.css?body=1 HTTP/1.0" 200 2414 2.4388
+124.35.83.42 - - [20/Jun/2018:15:10:24 +0900] "GET /jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1 HTTP/1.0" 200 293431 2.4422
+124.35.83.42 - - [20/Jun/2018:15:10:24 +0900] "GET /action_cable.self-5454023407ffec0d29137c7110917e1e745525ae9afbc05f52104c4cd6597429.js?body=1 HTTP/1.0" 200 20472 2.2983
+124.35.83.42 - - [20/Jun/2018:15:10:24 +0900] "GET /images/top.jpg HTTP/1.0" 404 23210 0.1195
+124.35.83.42 - - [20/Jun/2018:15:10:24 +0900] "GET /favicon.ico HTTP/1.0" 200 - 0.0016
+124.35.83.42 - - [20/Jun/2018:15:10:27 +0900] "GET /posts/index HTTP/1.0" 200 - 0.1017
+124.35.83.42 - - [20/Jun/2018:15:10:38 +0900] "GET /posts/new HTTP/1.0" 200 - 0.0771
+124.35.83.42 - - [20/Jun/2018:15:10:40 +0900] "POST /posts/create HTTP/1.0" 302 - 0.0338
+124.35.83.42 - - [20/Jun/2018:15:10:40 +0900] "GET /posts/index HTTP/1.0" 200 - 0.0246
+124.35.83.42 - - [20/Jun/2018:15:10:55 +0900] "GET /signup HTTP/1.0" 404 2948 0.0580
+124.35.83.42 - - [20/Jun/2018:15:10:58 +0900] "GET /posts/index HTTP/1.0" 200 - 0.1782
+124.35.83.42 - - [20/Jun/2018:15:11:00 +0900] "GET /users/index HTTP/1.0" 200 - 0.0450
+E, [2018-06-20T15:12:07.204996 #1] ERROR -- : reaped #<Process::Status: pid 113 SIGHUP (signal 1)> worker=unknown

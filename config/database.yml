@@ -1,16 +1,17 @@
 default: &default
-  adapter: postgresql
-  encoding: unicode
-  host: db
-  username: postgres
-  password:
+  adapter: mysql2
+  encoding: utf8
   pool: 5
+  username: root
+  password: <%= ENV['MYSQL_ROOT_PASSWORD'] %>
+  host: db
+  socket: /tmp/mysql.sock
 
 development:
   <<: *default
-  database: myapp_development
+  database: event_cross_development
 
 
 test:
   <<: *default
-  database: myapp_test
+  database: event_cross_test

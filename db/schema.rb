@@ -12,20 +12,17 @@
 
 ActiveRecord::Schema.define(version: 20180620032836) do
 
-  # These are extensions that must be enabled in order to support this database
-  enable_extension "plpgsql"
-
-  create_table "posts", force: :cascade do |t|
-    t.text     "content"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+  create_table "posts", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8mb4" do |t|
+    t.text     "content",    limit: 65535
+    t.datetime "created_at",               null: false
+    t.datetime "updated_at",               null: false
   end
 
-  create_table "users", force: :cascade do |t|
-    t.text     "name"
-    t.text     "email"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+  create_table "users", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8mb4" do |t|
+    t.text     "name",       limit: 65535
+    t.text     "email",      limit: 65535
+    t.datetime "created_at",               null: false
+    t.datetime "updated_at",               null: false
     t.string   "image_name"
   end
 
