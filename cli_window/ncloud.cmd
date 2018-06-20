@@ -1,0 +1,5 @@
+@ECHO OFF
+
+SET HOME=./lib
+
+.\jre7\bin\java -jar %HOME%/ncloud-api-cli-1.0.8-SNAPSHOT-jar-with-dependencies.jar %*
