@@ -22,7 +22,6 @@
       <ul class="header-menus">
         <% if @current_user %>
           <li>
-            <!-- @current_userに書き換えてください -->
             <%= link_to(@current_user.name, "/users/#{@current_user.id}") %>
           </li>
           <li>
@@ -39,7 +38,7 @@
           </li>
         <% else %>
           <li>
-            <%= link_to("TweetAppとは", "/about") %>
+            <%= link_to("EventCrossとは", "/about") %>
           </li>
           <li>
             <%= link_to("新規登録", "/signup") %>
