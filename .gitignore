@@ -1,3 +1,5 @@
-docker-compose.yml
-/tmp
-/docker/mysql/volumes
+/docker-compose.yml
+/tmp/
+/docker/mysql/volumes/
+/log/
+
