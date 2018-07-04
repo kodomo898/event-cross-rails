@@ -950,3 +950,102 @@ I, [2018-07-04T12:13:36.070297 #9]  INFO -- : worker=1 ready
 124.35.83.42 - - [04/Jul/2018:12:14:31 +0900] "GET /signup HTTP/1.0" 200 - 0.0357
 124.35.83.42 - - [04/Jul/2018:12:14:46 +0900] "GET /about HTTP/1.0" 200 - 0.2111
 124.35.83.42 - - [04/Jul/2018:12:14:46 +0900] "GET / HTTP/1.0" 200 - 0.3007
+I, [2018-07-04T12:19:05.684379 #1]  INFO -- : reaped #<Process::Status: pid 7 exit 0> worker=0
+I, [2018-07-04T12:19:05.714531 #1]  INFO -- : reaped #<Process::Status: pid 9 exit 0> worker=1
+I, [2018-07-04T12:19:05.714582 #1]  INFO -- : reaped #<Process::Status: pid 12 exit 0> worker=2
+I, [2018-07-04T12:19:05.714636 #1]  INFO -- : reaped #<Process::Status: pid 15 exit 0> worker=3
+I, [2018-07-04T12:19:05.714678 #1]  INFO -- : reaped #<Process::Status: pid 18 exit 0> worker=4
+I, [2018-07-04T12:19:05.714705 #1]  INFO -- : reaped #<Process::Status: pid 21 exit 0> worker=5
+I, [2018-07-04T12:19:05.714729 #1]  INFO -- : reaped #<Process::Status: pid 24 exit 0> worker=6
+I, [2018-07-04T12:19:05.714754 #1]  INFO -- : reaped #<Process::Status: pid 27 exit 0> worker=7
+I, [2018-07-04T12:19:05.739183 #1]  INFO -- : master complete
+I, [2018-07-04T12:19:28.794529 #1]  INFO -- : unlinking existing socket=/share/unicorn.sock
+I, [2018-07-04T12:19:28.795096 #1]  INFO -- : listening on addr=/share/unicorn.sock fd=9
+I, [2018-07-04T12:19:28.795324 #1]  INFO -- : listening on addr=0.0.0.0:3001 fd=10
+I, [2018-07-04T12:19:28.795398 #1]  INFO -- : worker=0 spawning...
+I, [2018-07-04T12:19:28.796169 #1]  INFO -- : worker=1 spawning...
+I, [2018-07-04T12:19:28.796646 #1]  INFO -- : worker=2 spawning...
+I, [2018-07-04T12:19:28.797859 #1]  INFO -- : worker=3 spawning...
+I, [2018-07-04T12:19:28.797940 #7]  INFO -- : worker=0 spawned pid=7
+I, [2018-07-04T12:19:28.798096 #7]  INFO -- : Refreshing Gem list
+I, [2018-07-04T12:19:28.799408 #9]  INFO -- : worker=1 spawned pid=9
+I, [2018-07-04T12:19:28.799544 #9]  INFO -- : Refreshing Gem list
+I, [2018-07-04T12:19:28.801896 #1]  INFO -- : worker=4 spawning...
+I, [2018-07-04T12:19:28.803543 #12]  INFO -- : worker=2 spawned pid=12
+I, [2018-07-04T12:19:28.803676 #12]  INFO -- : Refreshing Gem list
+I, [2018-07-04T12:19:28.805931 #1]  INFO -- : worker=5 spawning...
+I, [2018-07-04T12:19:28.806808 #15]  INFO -- : worker=3 spawned pid=15
+I, [2018-07-04T12:19:28.806948 #15]  INFO -- : Refreshing Gem list
+I, [2018-07-04T12:19:28.808318 #1]  INFO -- : worker=6 spawning...
+I, [2018-07-04T12:19:28.809189 #18]  INFO -- : worker=4 spawned pid=18
+I, [2018-07-04T12:19:28.809336 #18]  INFO -- : Refreshing Gem list
+I, [2018-07-04T12:19:28.810541 #1]  INFO -- : worker=7 spawning...
+I, [2018-07-04T12:19:28.811679 #21]  INFO -- : worker=5 spawned pid=21
+I, [2018-07-04T12:19:28.811839 #21]  INFO -- : Refreshing Gem list
+I, [2018-07-04T12:19:28.826057 #1]  INFO -- : master process ready
+I, [2018-07-04T12:19:28.827543 #24]  INFO -- : worker=6 spawned pid=24
+I, [2018-07-04T12:19:28.827684 #24]  INFO -- : Refreshing Gem list
+I, [2018-07-04T12:19:28.833366 #28]  INFO -- : worker=7 spawned pid=28
+I, [2018-07-04T12:19:28.834353 #28]  INFO -- : Refreshing Gem list
+I, [2018-07-04T12:19:37.972365 #18]  INFO -- : worker=4 ready
+I, [2018-07-04T12:19:37.979842 #7]  INFO -- : worker=0 ready
+I, [2018-07-04T12:19:37.987314 #21]  INFO -- : worker=5 ready
+I, [2018-07-04T12:19:37.988276 #12]  INFO -- : worker=2 ready
+I, [2018-07-04T12:19:37.986908 #28]  INFO -- : worker=7 ready
+I, [2018-07-04T12:19:37.991284 #24]  INFO -- : worker=6 ready
+I, [2018-07-04T12:19:37.996446 #15]  INFO -- : worker=3 ready
+I, [2018-07-04T12:19:37.997786 #9]  INFO -- : worker=1 ready
+I, [2018-07-04T12:20:07.891236 #1]  INFO -- : reaped #<Process::Status: pid 7 exit 0> worker=0
+I, [2018-07-04T12:20:07.892673 #1]  INFO -- : reaped #<Process::Status: pid 9 exit 0> worker=1
+I, [2018-07-04T12:20:07.892728 #1]  INFO -- : reaped #<Process::Status: pid 12 exit 0> worker=2
+I, [2018-07-04T12:20:07.892806 #1]  INFO -- : reaped #<Process::Status: pid 15 exit 0> worker=3
+I, [2018-07-04T12:20:07.892835 #1]  INFO -- : reaped #<Process::Status: pid 18 exit 0> worker=4
+I, [2018-07-04T12:20:07.892861 #1]  INFO -- : reaped #<Process::Status: pid 21 exit 0> worker=5
+I, [2018-07-04T12:20:07.892884 #1]  INFO -- : reaped #<Process::Status: pid 24 exit 0> worker=6
+I, [2018-07-04T12:20:07.892908 #1]  INFO -- : reaped #<Process::Status: pid 28 exit 0> worker=7
+I, [2018-07-04T12:20:07.893673 #1]  INFO -- : master complete
+I, [2018-07-04T12:20:24.093453 #1]  INFO -- : unlinking existing socket=/share/unicorn.sock
+I, [2018-07-04T12:20:24.093818 #1]  INFO -- : listening on addr=/share/unicorn.sock fd=9
+I, [2018-07-04T12:20:24.094045 #1]  INFO -- : listening on addr=0.0.0.0:3001 fd=10
+I, [2018-07-04T12:20:24.094120 #1]  INFO -- : worker=0 spawning...
+I, [2018-07-04T12:20:24.095144 #1]  INFO -- : worker=1 spawning...
+I, [2018-07-04T12:20:24.095713 #1]  INFO -- : worker=2 spawning...
+I, [2018-07-04T12:20:24.096582 #7]  INFO -- : worker=0 spawned pid=7
+I, [2018-07-04T12:20:24.097271 #1]  INFO -- : worker=3 spawning...
+I, [2018-07-04T12:20:24.098031 #9]  INFO -- : worker=1 spawned pid=9
+I, [2018-07-04T12:20:24.098723 #1]  INFO -- : worker=4 spawning...
+I, [2018-07-04T12:20:24.098821 #7]  INFO -- : Refreshing Gem list
+I, [2018-07-04T12:20:24.099577 #9]  INFO -- : Refreshing Gem list
+I, [2018-07-04T12:20:24.103276 #12]  INFO -- : worker=2 spawned pid=12
+I, [2018-07-04T12:20:24.103423 #12]  INFO -- : Refreshing Gem list
+I, [2018-07-04T12:20:24.104569 #1]  INFO -- : worker=5 spawning...
+I, [2018-07-04T12:20:24.108080 #1]  INFO -- : worker=6 spawning...
+I, [2018-07-04T12:20:24.109154 #18]  INFO -- : worker=4 spawned pid=18
+I, [2018-07-04T12:20:24.109299 #18]  INFO -- : Refreshing Gem list
+I, [2018-07-04T12:20:24.109739 #15]  INFO -- : worker=3 spawned pid=15
+I, [2018-07-04T12:20:24.109875 #15]  INFO -- : Refreshing Gem list
+I, [2018-07-04T12:20:24.115867 #1]  INFO -- : worker=7 spawning...
+I, [2018-07-04T12:20:24.118127 #21]  INFO -- : worker=5 spawned pid=21
+I, [2018-07-04T12:20:24.118267 #21]  INFO -- : Refreshing Gem list
+I, [2018-07-04T12:20:24.126027 #24]  INFO -- : worker=6 spawned pid=24
+I, [2018-07-04T12:20:24.126155 #24]  INFO -- : Refreshing Gem list
+I, [2018-07-04T12:20:24.130202 #1]  INFO -- : master process ready
+I, [2018-07-04T12:20:24.138191 #28]  INFO -- : worker=7 spawned pid=28
+I, [2018-07-04T12:20:24.138334 #28]  INFO -- : Refreshing Gem list
+I, [2018-07-04T12:20:33.180545 #24]  INFO -- : worker=6 ready
+I, [2018-07-04T12:20:33.197683 #15]  INFO -- : worker=3 ready
+I, [2018-07-04T12:20:33.185020 #21]  INFO -- : worker=5 ready
+I, [2018-07-04T12:20:33.198399 #18]  INFO -- : worker=4 ready
+I, [2018-07-04T12:20:33.188305 #12]  INFO -- : worker=2 ready
+I, [2018-07-04T12:20:33.191638 #7]  INFO -- : worker=0 ready
+I, [2018-07-04T12:20:33.195137 #9]  INFO -- : worker=1 ready
+I, [2018-07-04T12:20:33.212064 #28]  INFO -- : worker=7 ready
+I, [2018-07-04T12:27:19.989907 #1]  INFO -- : reaped #<Process::Status: pid 7 exit 0> worker=0
+I, [2018-07-04T12:27:20.012882 #1]  INFO -- : reaped #<Process::Status: pid 9 exit 0> worker=1
+I, [2018-07-04T12:27:20.012965 #1]  INFO -- : reaped #<Process::Status: pid 12 exit 0> worker=2
+I, [2018-07-04T12:27:20.013005 #1]  INFO -- : reaped #<Process::Status: pid 15 exit 0> worker=3
+I, [2018-07-04T12:27:20.016932 #1]  INFO -- : reaped #<Process::Status: pid 18 exit 0> worker=4
+I, [2018-07-04T12:27:20.017000 #1]  INFO -- : reaped #<Process::Status: pid 21 exit 0> worker=5
+I, [2018-07-04T12:27:20.017038 #1]  INFO -- : reaped #<Process::Status: pid 24 exit 0> worker=6
+I, [2018-07-04T12:27:20.017065 #1]  INFO -- : reaped #<Process::Status: pid 28 exit 0> worker=7
+I, [2018-07-04T12:27:20.030257 #1]  INFO -- : master complete
