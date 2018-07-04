@@ -1,12 +1,4 @@
-<<<<<<< HEAD
 /docker-compose.yml
 /tmp/
 /docker/mysql/volumes/
 /log/
-
-=======
-docker-compose.yml
-tmp/
-docker/mysql/volumes
-log/
->>>>>>> 89e8b98a720ba73f5af7e1cf58fb162172b77f50
