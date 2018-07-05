@@ -4,7 +4,14 @@ class UsersController < ApplicationController
   before_action :ensure_correct_user, {only: [:edit, :update]}
 
   def index
-    @users = User.all
+    @user = User.find_by(id: @current_user.id)
+    if @user.user_group == "eventer"
+      @users = User.where(user_group: "dj")
+      @group = "dj"
+    else
+      @users = User.where(user_group: "eventer")
+      @group = "eventer"
+    end
   end
 
   def show
@@ -20,6 +27,7 @@ class UsersController < ApplicationController
       name: params[:name],
       email: params[:email],
       image_name: "default_user.jpg",
+      user_group: params[:user_group],
       password: params[:password])
     if @user.save
       session[:user_id] = @user.id

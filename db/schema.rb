@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180705044228) do
+ActiveRecord::Schema.define(version: 20180705083440) do
 
   create_table "posts", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
     t.text     "content",    limit: 65535
@@ -26,6 +26,7 @@ ActiveRecord::Schema.define(version: 20180705044228) do
     t.datetime "updated_at",                    null: false
     t.string   "image_name"
     t.string   "password_digest"
+    t.string   "user_group"
   end
 
 end

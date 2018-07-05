@@ -3,6 +3,7 @@
     <div class="user">
       <h2><%= @user.name %></h2>
       <p><%= @user.email %></p>
+      <p><%= @user.user_group %></p>
       <img src="/user_images/<%= @user.image_name %>"></img>
       <br>
       <% if @user.id == @current_user.id %>
