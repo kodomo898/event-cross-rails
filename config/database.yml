@@ -11,7 +11,6 @@ development:
   <<: *default
   database: event_cross_development
 
-
 test:
   <<: *default
   database: event_cross_test
