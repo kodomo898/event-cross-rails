@@ -7,10 +7,10 @@ class UsersController < ApplicationController
     @user = User.find_by(id: @current_user.id)
     if @user.user_group == "eventer"
       @users = User.where(user_group: "dj")
-      @group = "dj"
+      @group = @users.user_group
     else
       @users = User.where(user_group: "eventer")
-      @group = "eventer"
+      @group = @users.user_group
     end
   end
 
