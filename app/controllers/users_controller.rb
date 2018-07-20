@@ -46,7 +46,7 @@ class UsersController < ApplicationController
     @user.email = params[:email]
 
     if params[:image]
-      @user.image_name = "#{@user.id}.jpg"
+      @user.image_name = "#{@user.name}.jpg"
       image = params[:image]
       Awss3.upload_user_image(params[:image].tempfile, @user.name)
     end
