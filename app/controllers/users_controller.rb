@@ -1,3 +1,5 @@
+require "user.rb"
+
 class UsersController < ApplicationController
   before_action :authenticate_user, {only: [:index, :show, :edit, :update]}
   before_action :forbid_login_user, {only: [:new, :create, :login_form, :login]}
@@ -23,19 +25,7 @@ class UsersController < ApplicationController
   end
 
   def create
-    @user = User.new(
-      name: params[:name],
-      email: params[:email],
-      image_name: "default_user.jpg",
-      user_group: params[:user_group],
-      password: params[:password])
-    if @user.save
-      session[:user_id] = @user.id
-      flash[:notice] = "登録しました"
-      redirect_to("/users/#{@user.id}")
-    else
-      render('/users/new')
-    end
+    User.new().create_user(params[:name], params[:email], params[:user_group], params[:password])
   end
 
   def edit
