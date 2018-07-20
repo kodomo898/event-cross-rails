@@ -9,10 +9,10 @@ class UsersController < ApplicationController
     @user = User.find_by(id: @current_user.id)
     if @user.user_group == "eventer"
       @users = User.where(user_group: "dj")
-      @group = @users.user_group
+      @group = @user.user_group
     else
       @users = User.where(user_group: "eventer")
-      @group = @users.user_group
+      @group = @user.user_group
     end
   end
 
@@ -25,7 +25,14 @@ class UsersController < ApplicationController
   end
 
   def create
-    User.new().create_user(params[:name], params[:email], params[:user_group], params[:password])
+    @user = User.new().create_user(params[:name], params[:email], params[:user_group], params[:password])
+    if @user.save
+      session[:user_id] = @user.id
+      flash[:notice] = "登録しました"
+      redirect_to("/users/#{@user.id}")
+    else
+      render('/users/new')
+    end
   end
 
   def edit
