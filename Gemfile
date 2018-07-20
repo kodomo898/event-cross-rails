@@ -59,4 +59,7 @@ gem 'bcrypt', '~> 3.1.11'
 gem 'newrelic_rpm'
 
 #aws
-gem 'aws-sdk-rails'
+gem 'aws-sdk'
+
+#Enviroment
+gem 'dotenv-rails'

@@ -1,6 +1,7 @@
-require "user.rb"
-
 class UsersController < ApplicationController
+  require "utility/awss3"
+  include Utils
+
   before_action :authenticate_user, {only: [:index, :show, :edit, :update]}
   before_action :forbid_login_user, {only: [:new, :create, :login_form, :login]}
   before_action :ensure_correct_user, {only: [:edit, :update]}
@@ -47,7 +48,7 @@ class UsersController < ApplicationController
     if params[:image]
       @user.image_name = "#{@user.id}.jpg"
       image = params[:image]
-      File.binwrite("public/user_images/#{@user.image_name}", image.read)
+      Awss3.upload_user_image(params[:image].tempfile, @user.name)
     end
 
     if @user.save
