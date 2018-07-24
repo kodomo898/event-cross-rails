@@ -26,7 +26,11 @@ class UsersController < ApplicationController
   end
 
   def create
-    @user = User.new().create_user(params[:name], params[:email], params[:user_group], params[:password])
+    @user = User.new().create_user(params[:name],
+                                   params[:email],
+                                   image_param="default_user.jpg",
+                                   params[:user_group],
+                                   params[:password])
     if @user.save
       session[:user_id] = @user.id
       flash[:notice] = "登録しました"
@@ -48,7 +52,10 @@ class UsersController < ApplicationController
     if params[:image]
       @user.image_name = "#{@user.name}.jpg"
       image = params[:image]
-      Awss3.upload_user_image(params[:image].tempfile, @user.name)
+      if !S3Client.upload_user_image(params[:image].tempfile, @user.name)
+        flash[:notice] = "この画像は登録できません。"
+        render('/users/edit')
+      end
     end
 
     if @user.save
