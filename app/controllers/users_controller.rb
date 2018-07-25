@@ -1,5 +1,5 @@
 class UsersController < ApplicationController
-  require "utility/awss3"
+  require "utility/s3client"
   include Utils
 
   before_action :authenticate_user, {only: [:index, :show, :edit, :update]}
@@ -52,7 +52,8 @@ class UsersController < ApplicationController
     if params[:image]
       @user.image_name = "#{@user.name}.jpg"
       image = params[:image]
-      if !S3Client.upload_user_image(params[:image].tempfile, @user.name)
+
+      if S3client.upload_user_image(params[:image].tempfile, @user.name)
         flash[:notice] = "この画像は登録できません。"
         render('/users/edit')
       end
