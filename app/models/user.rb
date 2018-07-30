@@ -3,6 +3,7 @@ class User < ApplicationRecord
 
   validates :name, {presence: true, uniqueness: true}
   validates :email, {presence: true}
+  validates :user_group, {presence: true}
 
   def create_user(name_param, email_param, image_param, user_group_param, password_param)
     @user_new = User.new(
