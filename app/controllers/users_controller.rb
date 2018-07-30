@@ -53,7 +53,7 @@ class UsersController < ApplicationController
       @user.image_name = "#{@user.name}.jpg"
       image = params[:image]
 
-      if S3client.upload_user_image(params[:image].tempfile, @user.name)
+      if S3client.upload_user_image(params[:image].tempfile, params[:name])
         flash[:notice] = "この画像は登録できません。"
         render('/users/edit')
       end
