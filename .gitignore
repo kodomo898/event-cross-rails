@@ -2,3 +2,5 @@
 /tmp/
 /docker/mysql/volumes/
 /log/
+/.env
+/.vscode

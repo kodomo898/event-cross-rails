@@ -1,4 +1,7 @@
 class UsersController < ApplicationController
+  require "utility/s3client"
+  include Utils
+
   before_action :authenticate_user, {only: [:index, :show, :edit, :update]}
   before_action :forbid_login_user, {only: [:new, :create, :login_form, :login]}
   before_action :ensure_correct_user, {only: [:edit, :update]}
@@ -7,10 +10,10 @@ class UsersController < ApplicationController
     @user = User.find_by(id: @current_user.id)
     if @user.user_group == "eventer"
       @users = User.where(user_group: "dj")
-      @group = "dj"
+      @group = @user.user_group
     else
       @users = User.where(user_group: "eventer")
-      @group = "eventer"
+      @group = @user.user_group
     end
   end
 
@@ -23,12 +26,11 @@ class UsersController < ApplicationController
   end
 
   def create
-    @user = User.new(
-      name: params[:name],
-      email: params[:email],
-      image_name: "default_user.jpg",
-      user_group: params[:user_group],
-      password: params[:password])
+    @user = User.new().create_user(params[:name],
+                                   params[:email],
+                                   image_param="default_user.jpg",
+                                   params[:user_group],
+                                   params[:password])
     if @user.save
       session[:user_id] = @user.id
       flash[:notice] = "登録しました"
@@ -48,9 +50,13 @@ class UsersController < ApplicationController
     @user.email = params[:email]
 
     if params[:image]
-      @user.image_name = "#{@user.id}.jpg"
+      @user.image_name = "#{@user.name}.jpg"
       image = params[:image]
-      File.binwrite("public/user_images/#{@user.image_name}", image.read)
+
+      if S3client.upload_user_image(params[:image].tempfile, @user.name)
+        flash[:notice] = "この画像は登録できません。"
+        render('/users/edit')
+      end
     end
 
     if @user.save

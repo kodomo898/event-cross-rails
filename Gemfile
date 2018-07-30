@@ -52,6 +52,14 @@ end
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
+#Password hyde
 gem 'bcrypt', '~> 3.1.11'
 
+#NewRelic package
 gem 'newrelic_rpm'
+
+#aws
+gem 'aws-sdk'
+
+#Enviroment
+gem 'dotenv-rails'
