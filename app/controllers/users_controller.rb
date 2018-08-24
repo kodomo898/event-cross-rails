@@ -55,13 +55,13 @@ class UsersController < ApplicationController
 
       if S3client.upload_user_image(params[:image].tempfile, @user.name)
         flash[:notice] = "この画像は登録できません。"
-        render('/users/edit')
+        render "edit"
       end
     end
 
-    if @user.save
+    if @user.update(user_params)
       flash[:notice] = "情報をアップデートしました"
-      redirect_to('/users/index')
+      redirect_to users_path
     else
       render('/users/edit')
     end
@@ -76,7 +76,7 @@ class UsersController < ApplicationController
     if @user && @user.authenticate(params[:password])
       session[:user_id] = @user.id
       flash[:notice] = "ログインしました"
-      redirect_to("/users/index")
+      redirect_to users_path
     else
       @error_message = "メールアドレスまたはパスワードが間違っています"
       @email = params[:email]
@@ -96,6 +96,17 @@ class UsersController < ApplicationController
       flash[:notice] = "権限がありません"
       redirect_to('/posts/index')
     end
+  end
+
+  private
+
+  def user_params
+    params.require(:user).permit(
+      :email,
+      :image_name,
+      :password,
+      :name
+    )
   end
 
 end

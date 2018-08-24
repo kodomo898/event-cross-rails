@@ -11,17 +11,21 @@ class PostsController < ApplicationController
   end
 
   def show
-    @post = Post.find_by(id: params[:id])
-    @user = User.find_by(id: @post.user_id)
+    if @post = Post.find_by(id: params[:id])
+      @user = User.find_by(id: @post.user_id)
+    else
+      flash[:notice] = "投稿が見つかりません"
+      redirect_to posts_path
+    end
   end
 
   def create
     @post = Post.new(content: params[:content], user_id: @current_user.id)
     if @post.save
       flash[:notice] = "投稿しました"
-      redirect_to("/posts/index")
+      redirect_to posts_path
     else
-      render('posts/new')
+      render "new"
     end
   end
 
@@ -34,9 +38,9 @@ class PostsController < ApplicationController
     @post.content = params[:content]
     if @post.save
       flash[:notice] = "投稿を修正しました"
-      redirect_to("/posts/index")
+      redirect_to posts_path
     else
-      render("/posts/#{@post.id}/edit")
+      render "edit"
     end
   end
 
@@ -44,6 +48,6 @@ class PostsController < ApplicationController
     @post = Post.find_by(id: params[:id])
     @post.destroy
     flash[:notice] = "削除しました"
-    redirect_to("/posts/index")
+    redirect_to posts_path
   end
 end
