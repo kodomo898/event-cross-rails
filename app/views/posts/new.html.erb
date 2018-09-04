@@ -1,7 +1,7 @@
 <div class="main posts-new">
   <div class="container">
     <h1 class="form-heading">投稿する</h1>
-    <%= form_for(@post, url: post_path(@post)) do |f| %>
+    <%= form_for(@post, url: posts_path) do |f| %>
       <div class="form">
         <div class="form-body">
           <% @post.errors.full_messages.each do |message| %>
@@ -10,7 +10,7 @@
             </div>
           <% end %>
 
-          <textarea name="content"><%= @post.content %></textarea>
+          <%= f.text_area :content %>
           <%= f.submit '投稿' %>
         </div>
       </div>
