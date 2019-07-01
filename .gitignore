@@ -1,6 +1,9 @@
 /docker-compose.yml
 /tmp/
 /docker/mysql/volumes/
-/log/
+/log/*
 /.env
 /.vscode
+
+# フォルダ保持のため
+!.keep
